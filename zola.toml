@@ -1,4 +1,4 @@
-base_url = "https://example.com"
+base_url = "https://cowburrs.github.io/portfolio"
 title = "Portfolio page"
 description = "A personal portfolio site based on zola."
 compile_sass = true

@@ -33,8 +33,9 @@
           book = pkgs.writeShellApplication {
             name = "mkbook";
             text = ''
-              python3 -m http.server 8000 -d ./public/ &
-              xdg-open http://0.0.0.0:8000/
+              # python3 -m http.server 8000 -d ./public/ &
+              # xdg-open http://0.0.0.0:8000/
+              xdg-open ./public/index.html
             '';
           };
         };
