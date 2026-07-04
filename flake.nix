@@ -32,10 +32,10 @@
           default = website;
           book = pkgs.writeShellApplication {
             name = "mkbook";
+            runtimeInputs = with pkgs; [ zola ];
             text = ''
-              # python3 -m http.server 8000 -d ./public/ &
-              # xdg-open http://0.0.0.0:8000/
-              xdg-open ./public/index.html
+              zola serve &
+              xdg-open http://127.0.0.1:1111
             '';
           };
         };
